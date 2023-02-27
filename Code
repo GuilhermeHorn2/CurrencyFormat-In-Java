@@ -1,0 +1,30 @@
+package project1;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class strt {
+
+	public static void main(String[] args) {
+		 // |
+		System.out.println();
+        Scanner scanner = new Scanner(System.in);
+        String payment = scanner.next();
+        double n = Double.parseDouble(payment);
+        
+        // Write your code here.
+        
+        //
+        System.out.println("US" + NumberFormat.getCurrencyInstance(Locale.US).format(n));
+        System.out.println("India" + NumberFormat.getCurrencyInstance(new Locale("en","in")).format(n));
+        System.out.println("China" + NumberFormat.getCurrencyInstance(Locale.CHINA).format(n));
+        System.out.println("France" +NumberFormat.getCurrencyInstance(Locale.FRANCE).format(n));
+    }		
+		
+		
+		
+		
+	}
+	
+
